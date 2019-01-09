@@ -69,6 +69,7 @@ export default {
       __TEST__: process.env.NODE_ENV === 'test',
       __DEV__: process.env.NODE_ENV === 'development',
       __POS__: process.env.APP_ENV === 'POS',
+      __ANDROID__: process.env.APP_ENV === 'android',
       __SIMULATOR__: process.env.MAMBA_SIMULATOR === true,
       __BROWSER__: process.env.APP_ENV === 'browser',
       __DEBUG_LVL__: 2,

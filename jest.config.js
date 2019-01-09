@@ -41,6 +41,7 @@ module.exports = {
     __DEV__: true,
     __DEBUG_LVL__: null,
     __POS__: false,
+    __ANDROID__: false,
     __SIMULATOR__: true,
     __BROWSER__: true,
   },
