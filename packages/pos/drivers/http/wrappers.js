@@ -11,6 +11,9 @@ export default function(driver) {
       ]);
 
       /** Asynchronously make a request at the backend */
+      if (__ANDROID__) {
+        configParams = JSON.stringify(configParams);
+      }
       driver.doSend(configParams);
     });
   };

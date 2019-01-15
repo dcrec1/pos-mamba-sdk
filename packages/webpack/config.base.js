@@ -136,6 +136,7 @@ module.exports = {
       __POS__: IS_POS,
       __SIMULATOR__: ADD_MAMBA_SIMULATOR,
       __BROWSER__: IS_BROWSER,
+      __ANDROID__: APP_ENV === 'android',
     }),
   ],
   /** Minimal useful output log */

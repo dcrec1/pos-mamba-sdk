@@ -15,6 +15,7 @@ const postcssHexRGBA = require('postcss-hexrgba');
 const prependImports = require('./prependImports.js');
 
 const IS_BUILDING_APP = !!process.env.APP_ENV;
+const __ANDROID__ = process.env.APP_ENV === 'android';
 
 const CWD = process.cwd();
 
@@ -22,6 +23,7 @@ const LOCAL_THEME_PATH = resolve(CWD, 'src/theme.pcss');
 
 const THEME_FILES = [
   '@mamba/styles/theme.pcss',
+  __ANDROID__ && '@mamba/styles/android_theme.pcss',
   existsSync(LOCAL_THEME_PATH) && LOCAL_THEME_PATH,
 ];
 

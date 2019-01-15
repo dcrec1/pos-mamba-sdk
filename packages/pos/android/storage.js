@@ -1,6 +1,7 @@
 import extendDriver from '../drivers/extend.js';
 
-const $Storage = extendDriver({});
+const { $Storage } = window;
+extendDriver({ $Storage });
 
 /* eslint-disable no-return-assign */
 const STORAGE = window.localStorage || {
@@ -34,9 +35,7 @@ $Storage.get = key => STORAGE.getItem(key) || '';
  * Clear all the values at the local storage.
  * @memberof Storage
  */
-Storage.clear = () => {
+$Storage.clear = () => {
   STORAGE.clear();
   return true;
 };
-
-window.$Storage = $Storage;

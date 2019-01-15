@@ -27,6 +27,7 @@ module.exports = {
     __NODE_ENV__: true,
     __BROWSER__: true,
     __POS__: true,
+    __ANDROID__: true,
     __PROD__: true,
     __TEST__: true,
     __DEV__: true,
