@@ -60,11 +60,31 @@
         this.setShortcuts(isEnabled);
       });
 
-      root.close = () => {
+      root.close = async () => {
         /** Allow to override the default app close process */
         if (typeof root.onClose === 'function') {
-          return root.onClose();
+          if (temAdmin) {
+            /** askAdminPass pode retornar uma promessa resolvida no evento de auth */
+            const auth = await askAdminPass();
+            /** errou a senha */
+            if (auth === false) return;
+
+            /** acertou, continua o fluxo */
+          }
+
+          const closingPromise = root.onClose();
+
+          /** if a promise is not returned,
+           * assume the custom close method will close the app with 'App.close()'
+           * */
+          if (!closingPromise || typeof closingPromise.then !== 'function') {
+            return;
+          }
+
+          /** Otherwise, wait for the closing promise */
+          await closingPromise;
         }
+
         App.close();
       };
 
