@@ -29,6 +29,7 @@
         suffix: '',
         limit: 99999999.99,
         validation: undefined,
+        _validation: undefined,
       };
     },
     computed: {
@@ -57,7 +58,7 @@
          */
         const { validation } = this.options.data;
         // istanbul ignore next
-        if (typeof this.options.data.validation === 'function') {
+        if (typeof validation === 'function') {
           this.set({
             _validation: () => validation(this.get().cents),
           });
