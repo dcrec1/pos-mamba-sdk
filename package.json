@@ -63,7 +63,7 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.4.0",
     "@commitlint/cli": "^7.5.0",
     "@commitlint/config-conventional": "^7.5.0",
     "@gen/rollup-plugin-generate-html": "^0.1.1",
