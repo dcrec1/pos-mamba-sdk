@@ -40,7 +40,7 @@ export function setup(Http) {
     xhttp.onerror = setError;
 
     xhttp.onloadend = function onloadend() {
-      if (this.status === 404) {
+      if (this.status >= 300) {
         setError.call(this);
       }
     };
