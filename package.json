@@ -90,7 +90,7 @@
     "postcss": "^7.0.13",
     "prettier": "^1.15.3",
     "quickenv": "^0.0.6",
-    "rollup": "^1.1.0",
+    "rollup": "1.9.2",
     "rollup-plugin-alias": "^1.5.1",
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-commonjs": "^9.2.0",
