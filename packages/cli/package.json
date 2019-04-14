@@ -20,7 +20,7 @@
     "cross-env": "^5.2.0",
     "global-dirs": "^0.1.1",
     "import-global": "^0.1.0",
-    "inquirer": "^6.2.2",
+    "inquirer": "^6.3.1",
     "quickenv": "^0.0.6",
     "yargonaut": "^1.1.4",
     "yargs": "^13.1.0"
