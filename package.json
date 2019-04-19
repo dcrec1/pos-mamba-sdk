@@ -74,7 +74,7 @@
     "@mamba/switch": "file:packages/components/Switch",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.5.0",
-    "commitizen": "^3.0.5",
+    "commitizen": "^3.1.1",
     "core-js": "^3.0.0",
     "cross-env": "^5.2.0",
     "deasync": "^0.1.14",
