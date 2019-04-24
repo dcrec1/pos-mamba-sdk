@@ -54,7 +54,7 @@
     "postcss-reporter": "^6.0.1",
     "postcss-syntax": "^0.36.2",
     "quickenv": "^0.0.6",
-    "resolve": "^1.10.0",
+    "resolve": "^1.10.1",
     "stylelint-config-standard": "^18.2.0"
   },
   "gitHead": "869644effc7b7347a2ff75c956c57d69ee8236a5"
