@@ -16,7 +16,7 @@
     "postcss": "^7.0.14",
     "prettier": "^1.16.4",
     "stylelint": "^9.10.1",
-    "svelte-preprocess": "^2.4.3"
+    "svelte-preprocess": "^2.6.3"
   },
   "peerDependencies": {
     "@babel/core": "^7.2.2",
