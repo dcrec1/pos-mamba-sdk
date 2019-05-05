@@ -105,6 +105,6 @@
     "rollup-plugin-virtual": "^1.0.1",
     "stylelint": "^9.10.0",
     "svelte": "^2.16.0",
-    "svelte-preprocess": "^2.4.3"
+    "svelte-preprocess": "^2.6.5"
   }
 }
